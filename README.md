@@ -1,5 +1,7 @@
 # rust-tdlib
 
+Added new methods
+
 update to support tdlib1.8.9 new author flow
 
 ````
