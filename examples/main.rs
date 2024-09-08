@@ -89,7 +89,7 @@ async fn main() {
 
     log::info!("get client");
 
-    let sp = SearchPublicChat::builder().username("sivakon").build();
+    let sp = SearchPublicChat::builder().username("username").build();
     dbg!(&sp);
 
     client1
