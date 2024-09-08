@@ -4,7 +4,7 @@ use std::collections::HashSet;
 use bson::Document;
 use serde::{Deserialize, Serialize};
 
-#[derive( Serialize, Deserialize, Clone, Default, Debug)]
+#[derive(Serialize, Deserialize, Clone, Default, Debug)]
 pub struct PremiumPaymentOption {
     // ID: typing.Literal["premiumPaymentOption"] = "premiumPaymentOption"
     pub currency: String,
@@ -15,7 +15,4 @@ pub struct PremiumPaymentOption {
     pub payment_link: InternalLinkType,
 }
 
-type InternalLinkType=Document;
-
-
-
+type InternalLinkType = Document;

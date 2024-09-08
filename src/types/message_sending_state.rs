@@ -247,7 +247,7 @@ impl MessageSendingStatePending {
 
         MessageSendingStatePendingBuilder { inner }
     }
-    pub fn sending_id(&self)->i64{
+    pub fn sending_id(&self) -> i64 {
         self.sending_id
     }
 }

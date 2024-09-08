@@ -49,7 +49,10 @@ async fn main() {
     sx.send("".to_string()).await.unwrap(); // empty encryption key
     sx.send("invalid phone".to_string()).await.unwrap(); // wrong phone number: not a number
 
-    let client = worker.bind_client(client).await.expect("can't bind client");
+    let client = worker
+        .bind_client(client, None)
+        .await
+        .expect("can't bind client");
 
     loop {
         match worker.wait_auth_state_change(&client).await {

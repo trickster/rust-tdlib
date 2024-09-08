@@ -17,7 +17,7 @@ include = [
   ".gitignore"
 ]
 readme = "README.md"
-edition = "2018"
+edition = "2021"
 
 [package.metadata.docs.rs]
 all-features = true

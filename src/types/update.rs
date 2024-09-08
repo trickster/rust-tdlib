@@ -338,6 +338,12 @@ pub enum Update {
     //
     #[serde(rename = "updateMessageReaction")]
     MessageReaction(serde_json::Value),
+    #[serde(rename = "updateSpeechRecognitionTrial")]
+    SpeechRecognitionTrial(serde_json::Value),
+    #[serde(rename = "updateDefaultBackground")]
+    DefaultBackground(serde_json::Value),
+    #[serde(rename = "updateProfileAccentColors")]
+    ProfileAccentColors(serde_json::Value),
     //for bot
     // #[serde(rename = "updateMessageReactions")]
     // MessageReactions(serde_json::Value),

@@ -19,8 +19,8 @@ pub struct ForumTopic {
     #[serde(default)]
     unread_reaction_count: i64,
     #[serde(default)]
-    // notification_settings: ChatNotificationSettings,
-    notification_settings: serde_json::Value,
+    notification_settings: ChatNotificationSettings,
+    // notification_settings: serde_json::Value,
     last_message: Option<Message>,
     draft_message: Option<DraftMessage>,
     #[serde(default)]
@@ -45,9 +45,9 @@ impl ForumTopic {
     pub fn unread_reaction_count(&self) -> i64 {
         self.unread_reaction_count
     }
-    // pub fn notification_settings(&self) -> &ChatNotificationSettings {
-    //     &self.notification_settings
-    // }
+    pub fn notification_settings(&self) -> &ChatNotificationSettings {
+        &self.notification_settings
+    }
     pub fn last_message(&self) -> &Option<Message> {
         &self.last_message
     }

@@ -483,7 +483,6 @@ pub struct AuthenticationCodeTypeFragment {
     client_id: Option<i32>,
     /// Length of the code
 
-
     #[serde(default)]
     url: String,
     #[serde(default)]
@@ -528,8 +527,7 @@ pub struct AuthenticationCodeTypeFragmentBuilder {
 }
 
 #[deprecated]
-pub type RTDAuthenticationCodeTypeFragmentBuilder =
-AuthenticationCodeTypeFragmentBuilder;
+pub type RTDAuthenticationCodeTypeFragmentBuilder = AuthenticationCodeTypeFragmentBuilder;
 
 impl AuthenticationCodeTypeFragmentBuilder {
     pub fn build(&self) -> AuthenticationCodeTypeFragment {
@@ -544,7 +542,6 @@ impl AuthenticationCodeTypeFragmentBuilder {
         self.inner.url = url;
         self
     }
-
 }
 
 impl AsRef<AuthenticationCodeTypeFragment> for AuthenticationCodeTypeFragment {
@@ -558,4 +555,3 @@ impl AsRef<AuthenticationCodeTypeFragment> for AuthenticationCodeTypeFragmentBui
         &self.inner
     }
 }
-

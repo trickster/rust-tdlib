@@ -3,25 +3,25 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Clone, Default, Debug)]
 pub struct MessageProperties {
-    can_be_deleted_only_for_self: bool,//v
-    can_be_deleted_for_all_users: bool,//v
-    can_be_edited: bool,//v
-    can_be_forwarded: bool,//v
+    can_be_deleted_only_for_self: bool, //v
+    can_be_deleted_for_all_users: bool, //v
+    can_be_edited: bool,                //v
+    can_be_forwarded: bool,             //v
     can_be_paid: bool,
     can_be_pinned: bool,
     can_be_replied: bool,
     can_be_replied_in_another_chat: bool,
-    can_be_saved: bool,//v
+    can_be_saved: bool, //v
     can_be_shared_in_story: bool,
     can_edit_scheduling_state: bool,
     can_get_added_reactions: bool,
     can_get_embedding_code: bool,
     can_get_link: bool,
-    can_get_media_timestamp_links: bool,//v
-    can_get_message_thread: bool,//v
+    can_get_media_timestamp_links: bool, //v
+    can_get_message_thread: bool,        //v
     can_get_read_date: bool,
-    can_get_statistics: bool,//v
-    can_get_viewers: bool,//v
+    can_get_statistics: bool, //v
+    can_get_viewers: bool,    //v
     can_recognize_speech: bool,
     can_report_chat: bool,
     can_report_reactions: bool,

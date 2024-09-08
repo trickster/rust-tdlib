@@ -1,7 +1,7 @@
 use crate::errors::Result;
+use crate::types::premium_payment_option::PremiumPaymentOption;
 use crate::types::*;
 use uuid::Uuid;
-use crate::types::premium_payment_option::PremiumPaymentOption;
 
 /// Contains full information about a user
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]

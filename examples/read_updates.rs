@@ -44,7 +44,7 @@ async fn main() {
     let mut waiter = worker.start();
 
     let v = tokio::select! {
-        c = worker.bind_client(client) => {
+        c = worker.bind_client(client, None) => {
             match c {
                 Ok(cl) => Some(cl),
                 Err(e) => panic!("{:?}", e)

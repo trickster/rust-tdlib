@@ -53,9 +53,6 @@ pub enum AuthorizationState {
     // authenticationCodeTypeFragment
     // #[serde(rename = "authenticationCodeTypeFragment")]
     // GetAuthorizationState(GetAuthorizationState),
-
-
-
 }
 
 impl Default for AuthorizationState {

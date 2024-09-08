@@ -176,7 +176,6 @@ impl User {
     }
 }
 
-#[doc(hidden)]
 pub struct UserBuilder {
     inner: User,
 }

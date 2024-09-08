@@ -45,9 +45,9 @@ pub enum MessageForwardOrigin {
 }
 //-------------------------------------
 pub type MessageOriginChat = MessageForwardOriginChat;
-pub type MessageOriginMessageImport= MessageForwardOriginMessageImport;
-pub type MessageOriginHiddenUser= MessageForwardOriginHiddenUser;
-pub type MessageOriginChannel= MessageForwardOriginChannel;
+pub type MessageOriginMessageImport = MessageForwardOriginMessageImport;
+pub type MessageOriginHiddenUser = MessageForwardOriginHiddenUser;
+pub type MessageOriginChannel = MessageForwardOriginChannel;
 //-------------------------------------
 
 impl Default for MessageForwardOrigin {
